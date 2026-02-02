@@ -1,0 +1,3489 @@
+°á'º"’!›è»$ê„ñ◊î:ÚÅ88µGá†Qõœ}{
+  "format-version" : 2,
+  "table-uuid" : "254acf34-ed47-439c-b80d-dcb4ed478f23",
+  "location" : "s3a://retail-lake/iceberg_warehouse/retail/orders",
+  "last-sequence-number" : 120,
+  "last-updated-ms" : 1770030120851,
+  "last-column-id" : 6,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "order_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "customer_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "product_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "price",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "quantity",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 6,
+      "name" : "timestamp",
+      "required" : false,
+      "type" : "timestamptz"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "root",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 6759893995228354000,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 6759893995228354000,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 1066501111643941444,
+    "timestamp-ms" : 1770029532749,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "0",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "1888",
+      "added-files-size" : "98925",
+      "changed-partition-count" : "1",
+      "total-records" : "1888",
+      "total-files-size" : "98925",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1066501111643941444-1-34f7def8-ff08-4cb4-8a0d-10e4c10cf18b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 4433274433841543261,
+    "parent-snapshot-id" : 1066501111643941444,
+    "timestamp-ms" : 1770029534909,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "1",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "14",
+      "added-files-size" : "2932",
+      "changed-partition-count" : "1",
+      "total-records" : "1902",
+      "total-files-size" : "101857",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4433274433841543261-1-a61b20bb-d6b2-4301-aa41-6ac1a2654ac8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 2954599012390699088,
+    "parent-snapshot-id" : 4433274433841543261,
+    "timestamp-ms" : 1770029536214,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "2",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "4",
+      "added-files-size" : "2291",
+      "changed-partition-count" : "1",
+      "total-records" : "1906",
+      "total-files-size" : "104148",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2954599012390699088-1-b87c5889-a2be-40b9-b96e-0ccbff0df74f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 4,
+    "snapshot-id" : 5859216669589571597,
+    "parent-snapshot-id" : 2954599012390699088,
+    "timestamp-ms" : 1770029541230,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "3",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "1916",
+      "total-files-size" : "106858",
+      "total-data-files" : "4",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5859216669589571597-1-c3667e0a-580a-4e4c-8090-64fa4bf6efe8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 5,
+    "snapshot-id" : 8048923130470806276,
+    "parent-snapshot-id" : 5859216669589571597,
+    "timestamp-ms" : 1770029546163,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "4",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2706",
+      "changed-partition-count" : "1",
+      "total-records" : "1926",
+      "total-files-size" : "109564",
+      "total-data-files" : "5",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8048923130470806276-1-5236e4d4-afd4-49fd-85f8-06258aba5427.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 6,
+    "snapshot-id" : 4480618385027906664,
+    "parent-snapshot-id" : 8048923130470806276,
+    "timestamp-ms" : 1770029551114,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "5",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2723",
+      "changed-partition-count" : "1",
+      "total-records" : "1936",
+      "total-files-size" : "112287",
+      "total-data-files" : "6",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4480618385027906664-1-b3ab248f-c028-4940-b192-b684ecfc46cf.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 7,
+    "snapshot-id" : 786430340235921023,
+    "parent-snapshot-id" : 4480618385027906664,
+    "timestamp-ms" : 1770029556118,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "6",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "8",
+      "added-files-size" : "2588",
+      "changed-partition-count" : "1",
+      "total-records" : "1944",
+      "total-files-size" : "114875",
+      "total-data-files" : "7",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-786430340235921023-1-0f65db71-bc86-43d4-818e-e4b8fe6990b2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 8,
+    "snapshot-id" : 2650805938513895343,
+    "parent-snapshot-id" : 786430340235921023,
+    "timestamp-ms" : 1770029561163,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "7",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2701",
+      "changed-partition-count" : "1",
+      "total-records" : "1954",
+      "total-files-size" : "117576",
+      "total-data-files" : "8",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2650805938513895343-1-37ca6329-fa8f-43f5-97d6-40af1009fb6e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 9,
+    "snapshot-id" : 2128715170533179424,
+    "parent-snapshot-id" : 2650805938513895343,
+    "timestamp-ms" : 1770029566152,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "8",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "1964",
+      "total-files-size" : "120288",
+      "total-data-files" : "9",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2128715170533179424-1-bcd7260c-247d-46b6-9c24-61c464b8b282.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 10,
+    "snapshot-id" : 4960065625936016190,
+    "parent-snapshot-id" : 2128715170533179424,
+    "timestamp-ms" : 1770029571132,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "9",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "1974",
+      "total-files-size" : "123001",
+      "total-data-files" : "10",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4960065625936016190-1-d5ecbfcd-145d-4559-8a22-c88c418dd547.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 11,
+    "snapshot-id" : 3744832089703232743,
+    "parent-snapshot-id" : 4960065625936016190,
+    "timestamp-ms" : 1770029576149,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "10",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2704",
+      "changed-partition-count" : "1",
+      "total-records" : "1984",
+      "total-files-size" : "125705",
+      "total-data-files" : "11",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3744832089703232743-1-3f46e1c5-680e-40e0-a099-ae54afbb0aa9.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 12,
+    "snapshot-id" : 9053251877081099785,
+    "parent-snapshot-id" : 3744832089703232743,
+    "timestamp-ms" : 1770029581084,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "11",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2720",
+      "changed-partition-count" : "1",
+      "total-records" : "1994",
+      "total-files-size" : "128425",
+      "total-data-files" : "12",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-9053251877081099785-1-60560271-fb63-4c32-be29-3dc6421298a1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 13,
+    "snapshot-id" : 2941555470234064885,
+    "parent-snapshot-id" : 9053251877081099785,
+    "timestamp-ms" : 1770029585982,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "12",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2004",
+      "total-files-size" : "131138",
+      "total-data-files" : "13",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2941555470234064885-1-3fcdd05b-519a-4789-a349-e88b6d832091.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 14,
+    "snapshot-id" : 6359021715772090765,
+    "parent-snapshot-id" : 2941555470234064885,
+    "timestamp-ms" : 1770029591120,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "13",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2714",
+      "changed-partition-count" : "1",
+      "total-records" : "2014",
+      "total-files-size" : "133852",
+      "total-data-files" : "14",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6359021715772090765-1-fa6f9e6a-521e-40d3-a46b-e0d2288b710e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 15,
+    "snapshot-id" : 3737232124686270142,
+    "parent-snapshot-id" : 6359021715772090765,
+    "timestamp-ms" : 1770029596086,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "14",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2024",
+      "total-files-size" : "136565",
+      "total-data-files" : "15",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3737232124686270142-1-63e469af-56c9-42f3-8e60-60cc31df0a99.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 16,
+    "snapshot-id" : 719069379371621993,
+    "parent-snapshot-id" : 3737232124686270142,
+    "timestamp-ms" : 1770029601007,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "15",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2034",
+      "total-files-size" : "139282",
+      "total-data-files" : "16",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-719069379371621993-1-e58368cd-6c4b-43e4-b304-10209b8d9c6f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 17,
+    "snapshot-id" : 5400090682519983980,
+    "parent-snapshot-id" : 719069379371621993,
+    "timestamp-ms" : 1770029606135,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "16",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "2044",
+      "total-files-size" : "141994",
+      "total-data-files" : "17",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5400090682519983980-1-2992c54b-a24d-468a-b239-a76d7895ba92.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 18,
+    "snapshot-id" : 5811876878324594624,
+    "parent-snapshot-id" : 5400090682519983980,
+    "timestamp-ms" : 1770029611035,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "17",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2711",
+      "changed-partition-count" : "1",
+      "total-records" : "2054",
+      "total-files-size" : "144705",
+      "total-data-files" : "18",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5811876878324594624-1-2f1d24bc-a908-471c-935c-09aa416441ad.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 19,
+    "snapshot-id" : 4155545498999826876,
+    "parent-snapshot-id" : 5811876878324594624,
+    "timestamp-ms" : 1770029615525,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "18",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2715",
+      "changed-partition-count" : "1",
+      "total-records" : "2064",
+      "total-files-size" : "147420",
+      "total-data-files" : "19",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4155545498999826876-1-12578cb3-9718-4f39-b65a-9b06c8f7c662.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 20,
+    "snapshot-id" : 1693520380345594554,
+    "parent-snapshot-id" : 4155545498999826876,
+    "timestamp-ms" : 1770029621104,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "19",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2705",
+      "changed-partition-count" : "1",
+      "total-records" : "2074",
+      "total-files-size" : "150125",
+      "total-data-files" : "20",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1693520380345594554-1-74e2905b-0287-4830-a02d-f6e9e831a966.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 21,
+    "snapshot-id" : 5220092480378982761,
+    "parent-snapshot-id" : 1693520380345594554,
+    "timestamp-ms" : 1770029625536,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "20",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2719",
+      "changed-partition-count" : "1",
+      "total-records" : "2084",
+      "total-files-size" : "152844",
+      "total-data-files" : "21",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5220092480378982761-1-2e86c4a6-c6f6-4924-a554-0869bb3d96be.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 22,
+    "snapshot-id" : 8965804545960591202,
+    "parent-snapshot-id" : 5220092480378982761,
+    "timestamp-ms" : 1770029630538,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "21",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2721",
+      "changed-partition-count" : "1",
+      "total-records" : "2094",
+      "total-files-size" : "155565",
+      "total-data-files" : "22",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8965804545960591202-1-9b88f032-b82c-45af-92b3-d162f98a89f8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 23,
+    "snapshot-id" : 7035423479249074077,
+    "parent-snapshot-id" : 8965804545960591202,
+    "timestamp-ms" : 1770029635669,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "22",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2721",
+      "changed-partition-count" : "1",
+      "total-records" : "2104",
+      "total-files-size" : "158286",
+      "total-data-files" : "23",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7035423479249074077-1-cf747a95-e3c1-4d08-a734-d6b1509b04b3.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 24,
+    "snapshot-id" : 1254520747719292254,
+    "parent-snapshot-id" : 7035423479249074077,
+    "timestamp-ms" : 1770029640625,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "23",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2707",
+      "changed-partition-count" : "1",
+      "total-records" : "2114",
+      "total-files-size" : "160993",
+      "total-data-files" : "24",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1254520747719292254-1-08504652-4bbf-4657-a351-891ef46726a9.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 25,
+    "snapshot-id" : 2175587505709765125,
+    "parent-snapshot-id" : 1254520747719292254,
+    "timestamp-ms" : 1770029645602,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "24",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2706",
+      "changed-partition-count" : "1",
+      "total-records" : "2124",
+      "total-files-size" : "163699",
+      "total-data-files" : "25",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2175587505709765125-1-26e4389c-1d40-40c4-b984-606cb9d4a9f6.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 26,
+    "snapshot-id" : 8149156306642393412,
+    "parent-snapshot-id" : 2175587505709765125,
+    "timestamp-ms" : 1770029650720,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "25",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2718",
+      "changed-partition-count" : "1",
+      "total-records" : "2134",
+      "total-files-size" : "166417",
+      "total-data-files" : "26",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8149156306642393412-1-0b003fac-0204-4baf-8fc7-ea40f7ba0d29.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 27,
+    "snapshot-id" : 145736026979077629,
+    "parent-snapshot-id" : 8149156306642393412,
+    "timestamp-ms" : 1770029655653,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "26",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2715",
+      "changed-partition-count" : "1",
+      "total-records" : "2144",
+      "total-files-size" : "169132",
+      "total-data-files" : "27",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-145736026979077629-1-11752f80-11c6-47b4-95af-865879113ab8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 28,
+    "snapshot-id" : 756872894576375553,
+    "parent-snapshot-id" : 145736026979077629,
+    "timestamp-ms" : 1770029660653,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "27",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2718",
+      "changed-partition-count" : "1",
+      "total-records" : "2154",
+      "total-files-size" : "171850",
+      "total-data-files" : "28",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-756872894576375553-1-41df736a-b4df-4e2b-b209-407d7cbbd7d7.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 29,
+    "snapshot-id" : 2424755938347820841,
+    "parent-snapshot-id" : 756872894576375553,
+    "timestamp-ms" : 1770029665697,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "28",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2714",
+      "changed-partition-count" : "1",
+      "total-records" : "2164",
+      "total-files-size" : "174564",
+      "total-data-files" : "29",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2424755938347820841-1-b530db56-5e9e-4fdb-b639-48015b9d00c6.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 30,
+    "snapshot-id" : 6846291009221090220,
+    "parent-snapshot-id" : 2424755938347820841,
+    "timestamp-ms" : 1770029670825,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "29",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2716",
+      "changed-partition-count" : "1",
+      "total-records" : "2174",
+      "total-files-size" : "177280",
+      "total-data-files" : "30",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6846291009221090220-1-3dd981e8-fa69-4660-8261-12c5ed1cc006.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 31,
+    "snapshot-id" : 5872340616122880346,
+    "parent-snapshot-id" : 6846291009221090220,
+    "timestamp-ms" : 1770029675864,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "30",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2705",
+      "changed-partition-count" : "1",
+      "total-records" : "2184",
+      "total-files-size" : "179985",
+      "total-data-files" : "31",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5872340616122880346-1-d757b45f-6226-4009-98e3-0f45de7fde7d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 32,
+    "snapshot-id" : 152045608576422438,
+    "parent-snapshot-id" : 5872340616122880346,
+    "timestamp-ms" : 1770029680885,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "31",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2194",
+      "total-files-size" : "182698",
+      "total-data-files" : "32",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-152045608576422438-1-7b1bbc11-9515-431c-afa7-f5147cc3b5a7.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 33,
+    "snapshot-id" : 2698453672045164472,
+    "parent-snapshot-id" : 152045608576422438,
+    "timestamp-ms" : 1770029685805,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "32",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2708",
+      "changed-partition-count" : "1",
+      "total-records" : "2204",
+      "total-files-size" : "185406",
+      "total-data-files" : "33",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2698453672045164472-1-84837f59-6297-4719-bfa6-bdbb4ccb2425.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 34,
+    "snapshot-id" : 808470621713480548,
+    "parent-snapshot-id" : 2698453672045164472,
+    "timestamp-ms" : 1770029690848,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "33",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2716",
+      "changed-partition-count" : "1",
+      "total-records" : "2214",
+      "total-files-size" : "188122",
+      "total-data-files" : "34",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-808470621713480548-1-cbd8389a-ba9a-478f-9962-42bbdd523c71.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 35,
+    "snapshot-id" : 5692268770036429254,
+    "parent-snapshot-id" : 808470621713480548,
+    "timestamp-ms" : 1770029695862,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "34",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2705",
+      "changed-partition-count" : "1",
+      "total-records" : "2224",
+      "total-files-size" : "190827",
+      "total-data-files" : "35",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5692268770036429254-1-66c0ea22-e4c2-4ac1-9421-68ed2e709658.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 36,
+    "snapshot-id" : 4038868888720600449,
+    "parent-snapshot-id" : 5692268770036429254,
+    "timestamp-ms" : 1770029700882,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "35",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2711",
+      "changed-partition-count" : "1",
+      "total-records" : "2234",
+      "total-files-size" : "193538",
+      "total-data-files" : "36",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4038868888720600449-1-3b385c26-dd6c-4627-9925-2fcb407e1cc7.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 37,
+    "snapshot-id" : 7366416894448308184,
+    "parent-snapshot-id" : 4038868888720600449,
+    "timestamp-ms" : 1770029705915,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "36",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2708",
+      "changed-partition-count" : "1",
+      "total-records" : "2244",
+      "total-files-size" : "196246",
+      "total-data-files" : "37",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7366416894448308184-1-6e81c852-109f-4e5d-ac10-d966ff608a03.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 38,
+    "snapshot-id" : 8331751299412290811,
+    "parent-snapshot-id" : 7366416894448308184,
+    "timestamp-ms" : 1770029710994,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "37",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2720",
+      "changed-partition-count" : "1",
+      "total-records" : "2254",
+      "total-files-size" : "198966",
+      "total-data-files" : "38",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8331751299412290811-1-b5b8ac54-f101-4ece-be53-e3b3a5b5c7d8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 39,
+    "snapshot-id" : 7859648518076985559,
+    "parent-snapshot-id" : 8331751299412290811,
+    "timestamp-ms" : 1770029715987,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "38",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "2264",
+      "total-files-size" : "201676",
+      "total-data-files" : "39",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7859648518076985559-1-90f224f0-04a2-45f2-a8bf-8eea56f7ff41.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 40,
+    "snapshot-id" : 1947193864219291083,
+    "parent-snapshot-id" : 7859648518076985559,
+    "timestamp-ms" : 1770029721079,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "39",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2274",
+      "total-files-size" : "204389",
+      "total-data-files" : "40",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1947193864219291083-1-65b7f7fe-00e8-4f17-91a1-f34db6b4a731.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 41,
+    "snapshot-id" : 3046068784951569886,
+    "parent-snapshot-id" : 1947193864219291083,
+    "timestamp-ms" : 1770029725994,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "40",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2711",
+      "changed-partition-count" : "1",
+      "total-records" : "2284",
+      "total-files-size" : "207100",
+      "total-data-files" : "41",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3046068784951569886-1-2881867f-843a-4a8c-9243-e3790042cced.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 42,
+    "snapshot-id" : 7658370817158028588,
+    "parent-snapshot-id" : 3046068784951569886,
+    "timestamp-ms" : 1770029730961,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "41",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "2294",
+      "total-files-size" : "209812",
+      "total-data-files" : "42",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7658370817158028588-1-a89886a2-5829-48f7-9ec5-069e63f21ab4.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 43,
+    "snapshot-id" : 7283123889521756217,
+    "parent-snapshot-id" : 7658370817158028588,
+    "timestamp-ms" : 1770029736032,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "42",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2718",
+      "changed-partition-count" : "1",
+      "total-records" : "2304",
+      "total-files-size" : "212530",
+      "total-data-files" : "43",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7283123889521756217-1-36e3d6c4-61f9-477b-8957-c8f311854ae5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 44,
+    "snapshot-id" : 358894745641852867,
+    "parent-snapshot-id" : 7283123889521756217,
+    "timestamp-ms" : 1770029740882,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "43",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2314",
+      "total-files-size" : "215247",
+      "total-data-files" : "44",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-358894745641852867-1-960d2bd1-c3b6-45e9-9a1f-6c05e749048f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 45,
+    "snapshot-id" : 4975333891790658444,
+    "parent-snapshot-id" : 358894745641852867,
+    "timestamp-ms" : 1770029745897,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "44",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2714",
+      "changed-partition-count" : "1",
+      "total-records" : "2324",
+      "total-files-size" : "217961",
+      "total-data-files" : "45",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4975333891790658444-1-cc5026e9-1dc9-478f-9605-bbcaa45ff939.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 46,
+    "snapshot-id" : 1095505235561858198,
+    "parent-snapshot-id" : 4975333891790658444,
+    "timestamp-ms" : 1770029750922,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "45",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2719",
+      "changed-partition-count" : "1",
+      "total-records" : "2334",
+      "total-files-size" : "220680",
+      "total-data-files" : "46",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1095505235561858198-1-12cdda2d-bde4-495b-bd14-aebb09e2b868.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 47,
+    "snapshot-id" : 8201700769087720470,
+    "parent-snapshot-id" : 1095505235561858198,
+    "timestamp-ms" : 1770029755945,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "46",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "9",
+      "added-files-size" : "2658",
+      "changed-partition-count" : "1",
+      "total-records" : "2343",
+      "total-files-size" : "223338",
+      "total-data-files" : "47",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8201700769087720470-1-fb4365b4-b6a5-46b3-b8b0-e8757a2ff279.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 48,
+    "snapshot-id" : 4536109690326774361,
+    "parent-snapshot-id" : 8201700769087720470,
+    "timestamp-ms" : 1770029761036,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "47",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2714",
+      "changed-partition-count" : "1",
+      "total-records" : "2353",
+      "total-files-size" : "226052",
+      "total-data-files" : "48",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4536109690326774361-1-165e4f41-24c4-4d4c-b282-2ca391f1fcd1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 49,
+    "snapshot-id" : 2171842264308689024,
+    "parent-snapshot-id" : 4536109690326774361,
+    "timestamp-ms" : 1770029765876,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "48",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "2363",
+      "total-files-size" : "228762",
+      "total-data-files" : "49",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2171842264308689024-1-35008199-786f-46f7-8488-befc7fe47cff.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 50,
+    "snapshot-id" : 1053976277135906567,
+    "parent-snapshot-id" : 2171842264308689024,
+    "timestamp-ms" : 1770029770877,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "49",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "9",
+      "added-files-size" : "2658",
+      "changed-partition-count" : "1",
+      "total-records" : "2372",
+      "total-files-size" : "231420",
+      "total-data-files" : "50",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1053976277135906567-1-c09a80fe-68dd-4a14-9cd1-73ad46525d12.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 51,
+    "snapshot-id" : 6964181081057050324,
+    "parent-snapshot-id" : 1053976277135906567,
+    "timestamp-ms" : 1770029775892,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "50",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2711",
+      "changed-partition-count" : "1",
+      "total-records" : "2382",
+      "total-files-size" : "234131",
+      "total-data-files" : "51",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6964181081057050324-1-5b7801cd-ad18-433d-a7aa-0c5839dd733d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 52,
+    "snapshot-id" : 5660035728158334228,
+    "parent-snapshot-id" : 6964181081057050324,
+    "timestamp-ms" : 1770029781166,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "51",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2694",
+      "changed-partition-count" : "1",
+      "total-records" : "2392",
+      "total-files-size" : "236825",
+      "total-data-files" : "52",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5660035728158334228-1-4f840fb6-40f3-4a3d-ad97-b45468f114ed.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 53,
+    "snapshot-id" : 8269964009495305128,
+    "parent-snapshot-id" : 5660035728158334228,
+    "timestamp-ms" : 1770029785926,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "52",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "2402",
+      "total-files-size" : "239535",
+      "total-data-files" : "53",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8269964009495305128-1-9938b133-4257-494f-8515-f0c27bf2396a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 54,
+    "snapshot-id" : 7711885672918992066,
+    "parent-snapshot-id" : 8269964009495305128,
+    "timestamp-ms" : 1770029790930,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "53",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2704",
+      "changed-partition-count" : "1",
+      "total-records" : "2412",
+      "total-files-size" : "242239",
+      "total-data-files" : "54",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7711885672918992066-1-dd277788-e34b-4d10-989c-799b34fe5c41.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 55,
+    "snapshot-id" : 2666608301375097087,
+    "parent-snapshot-id" : 7711885672918992066,
+    "timestamp-ms" : 1770029795892,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "54",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2422",
+      "total-files-size" : "244952",
+      "total-data-files" : "55",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2666608301375097087-1-7ddb5b79-a103-4c8e-87b7-82aa838ad13d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 56,
+    "snapshot-id" : 7720925409631862793,
+    "parent-snapshot-id" : 2666608301375097087,
+    "timestamp-ms" : 1770029800387,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "55",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2709",
+      "changed-partition-count" : "1",
+      "total-records" : "2432",
+      "total-files-size" : "247661",
+      "total-data-files" : "56",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7720925409631862793-1-ed5a3a4d-6e46-42a7-9f2f-e415b19dbade.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 57,
+    "snapshot-id" : 5750141586359940251,
+    "parent-snapshot-id" : 7720925409631862793,
+    "timestamp-ms" : 1770029805466,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "56",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2715",
+      "changed-partition-count" : "1",
+      "total-records" : "2442",
+      "total-files-size" : "250376",
+      "total-data-files" : "57",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5750141586359940251-1-7efd5c5f-fe0f-43a1-b7ee-f5bffb866205.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 58,
+    "snapshot-id" : 1568685635276804951,
+    "parent-snapshot-id" : 5750141586359940251,
+    "timestamp-ms" : 1770029810493,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "57",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2718",
+      "changed-partition-count" : "1",
+      "total-records" : "2452",
+      "total-files-size" : "253094",
+      "total-data-files" : "58",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1568685635276804951-1-03c205db-4f87-4132-8554-44c100165a81.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 59,
+    "snapshot-id" : 6939435535682279491,
+    "parent-snapshot-id" : 1568685635276804951,
+    "timestamp-ms" : 1770029815348,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "58",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2702",
+      "changed-partition-count" : "1",
+      "total-records" : "2462",
+      "total-files-size" : "255796",
+      "total-data-files" : "59",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6939435535682279491-1-62d06546-5074-4805-a892-5f3ae6d7cab1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 60,
+    "snapshot-id" : 8581281731109782468,
+    "parent-snapshot-id" : 6939435535682279491,
+    "timestamp-ms" : 1770029821033,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "59",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2720",
+      "changed-partition-count" : "1",
+      "total-records" : "2472",
+      "total-files-size" : "258516",
+      "total-data-files" : "60",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8581281731109782468-1-dda0570b-8d8d-44a5-97b9-d0a8a0d40283.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 61,
+    "snapshot-id" : 4721799067281747074,
+    "parent-snapshot-id" : 8581281731109782468,
+    "timestamp-ms" : 1770029825436,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "60",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "2482",
+      "total-files-size" : "261228",
+      "total-data-files" : "61",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4721799067281747074-1-20973430-1eb3-4327-bd53-edf608a360e5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 62,
+    "snapshot-id" : 7781731106664700140,
+    "parent-snapshot-id" : 4721799067281747074,
+    "timestamp-ms" : 1770029830600,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "61",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2719",
+      "changed-partition-count" : "1",
+      "total-records" : "2492",
+      "total-files-size" : "263947",
+      "total-data-files" : "62",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7781731106664700140-1-6fe0d12b-0dc1-4ac3-8edf-0953e7868b23.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 63,
+    "snapshot-id" : 6995296402791688361,
+    "parent-snapshot-id" : 7781731106664700140,
+    "timestamp-ms" : 1770029835456,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "62",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2502",
+      "total-files-size" : "266660",
+      "total-data-files" : "63",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6995296402791688361-1-4848033a-67f5-4157-941a-d55efb86dbbd.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 64,
+    "snapshot-id" : 7578921044888418750,
+    "parent-snapshot-id" : 6995296402791688361,
+    "timestamp-ms" : 1770029840515,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "63",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2721",
+      "changed-partition-count" : "1",
+      "total-records" : "2512",
+      "total-files-size" : "269381",
+      "total-data-files" : "64",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7578921044888418750-1-7cebf1ee-1db5-468d-874f-903d28c0713b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 65,
+    "snapshot-id" : 2744968199659543489,
+    "parent-snapshot-id" : 7578921044888418750,
+    "timestamp-ms" : 1770029845558,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "64",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2709",
+      "changed-partition-count" : "1",
+      "total-records" : "2522",
+      "total-files-size" : "272090",
+      "total-data-files" : "65",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2744968199659543489-1-9746b391-bcac-4d79-97a7-b19fb6082961.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 66,
+    "snapshot-id" : 3942024132670022402,
+    "parent-snapshot-id" : 2744968199659543489,
+    "timestamp-ms" : 1770029850553,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "65",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2708",
+      "changed-partition-count" : "1",
+      "total-records" : "2532",
+      "total-files-size" : "274798",
+      "total-data-files" : "66",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3942024132670022402-1-8209285f-fa6b-4c93-943b-8590e595773d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 67,
+    "snapshot-id" : 7652222314890177796,
+    "parent-snapshot-id" : 3942024132670022402,
+    "timestamp-ms" : 1770029855532,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "66",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2715",
+      "changed-partition-count" : "1",
+      "total-records" : "2542",
+      "total-files-size" : "277513",
+      "total-data-files" : "67",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7652222314890177796-1-44e2e017-ddf9-4aaa-9a1e-a14dcaf542cb.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 68,
+    "snapshot-id" : 834560371797283228,
+    "parent-snapshot-id" : 7652222314890177796,
+    "timestamp-ms" : 1770029860558,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "67",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2711",
+      "changed-partition-count" : "1",
+      "total-records" : "2552",
+      "total-files-size" : "280224",
+      "total-data-files" : "68",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-834560371797283228-1-23bc060d-d4a1-4538-9df9-904fa07b62f8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 69,
+    "snapshot-id" : 8885664542866114650,
+    "parent-snapshot-id" : 834560371797283228,
+    "timestamp-ms" : 1770029865850,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "68",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2719",
+      "changed-partition-count" : "1",
+      "total-records" : "2562",
+      "total-files-size" : "282943",
+      "total-data-files" : "69",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8885664542866114650-1-f852aeb2-866d-41d0-9326-1e4a7e9938b2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 70,
+    "snapshot-id" : 7031496077691300051,
+    "parent-snapshot-id" : 8885664542866114650,
+    "timestamp-ms" : 1770029870600,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "69",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2572",
+      "total-files-size" : "285660",
+      "total-data-files" : "70",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7031496077691300051-1-c83be89b-d004-447e-a20a-b5de38a3a334.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 71,
+    "snapshot-id" : 9011456032344848592,
+    "parent-snapshot-id" : 7031496077691300051,
+    "timestamp-ms" : 1770029875647,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "70",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "2582",
+      "total-files-size" : "288372",
+      "total-data-files" : "71",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-9011456032344848592-1-72185e21-5095-40a9-94f9-c0dfed541a03.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 72,
+    "snapshot-id" : 2803012640081589611,
+    "parent-snapshot-id" : 9011456032344848592,
+    "timestamp-ms" : 1770029880663,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "71",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "2592",
+      "total-files-size" : "291082",
+      "total-data-files" : "72",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2803012640081589611-1-224cc21c-c93d-484a-bacf-a799e46da31a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 73,
+    "snapshot-id" : 3865095355506449748,
+    "parent-snapshot-id" : 2803012640081589611,
+    "timestamp-ms" : 1770029885744,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "72",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2720",
+      "changed-partition-count" : "1",
+      "total-records" : "2602",
+      "total-files-size" : "293802",
+      "total-data-files" : "73",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3865095355506449748-1-3eb3f02b-71c3-4ee2-86b3-23febc4d1c74.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 74,
+    "snapshot-id" : 7718333437194846969,
+    "parent-snapshot-id" : 3865095355506449748,
+    "timestamp-ms" : 1770029890863,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "73",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2706",
+      "changed-partition-count" : "1",
+      "total-records" : "2612",
+      "total-files-size" : "296508",
+      "total-data-files" : "74",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7718333437194846969-1-95b37e5c-a08c-4dfd-b98d-1f00fef13252.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 75,
+    "snapshot-id" : 1165064642726377882,
+    "parent-snapshot-id" : 7718333437194846969,
+    "timestamp-ms" : 1770029895840,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "74",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2622",
+      "total-files-size" : "299225",
+      "total-data-files" : "75",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1165064642726377882-1-fe134afe-3bda-4dc5-8c7e-77897e74c0f5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 76,
+    "snapshot-id" : 6387165924374220348,
+    "parent-snapshot-id" : 1165064642726377882,
+    "timestamp-ms" : 1770029900846,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "75",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2709",
+      "changed-partition-count" : "1",
+      "total-records" : "2632",
+      "total-files-size" : "301934",
+      "total-data-files" : "76",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6387165924374220348-1-54662f83-d196-4563-92eb-b6bb77b7241b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 77,
+    "snapshot-id" : 4952287386123987694,
+    "parent-snapshot-id" : 6387165924374220348,
+    "timestamp-ms" : 1770029905856,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "76",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2642",
+      "total-files-size" : "304651",
+      "total-data-files" : "77",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4952287386123987694-1-1da3087c-3fa6-4616-9099-898f4fab300d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 78,
+    "snapshot-id" : 1000861234306272343,
+    "parent-snapshot-id" : 4952287386123987694,
+    "timestamp-ms" : 1770029910846,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "77",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2706",
+      "changed-partition-count" : "1",
+      "total-records" : "2652",
+      "total-files-size" : "307357",
+      "total-data-files" : "78",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1000861234306272343-1-ea79377d-275f-42b9-ab1e-ce0f85014242.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 79,
+    "snapshot-id" : 7391097002854563423,
+    "parent-snapshot-id" : 1000861234306272343,
+    "timestamp-ms" : 1770029915823,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "78",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2714",
+      "changed-partition-count" : "1",
+      "total-records" : "2662",
+      "total-files-size" : "310071",
+      "total-data-files" : "79",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7391097002854563423-1-2a900326-9da2-4519-a8e5-85774a37ace1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 80,
+    "snapshot-id" : 5390225112907187532,
+    "parent-snapshot-id" : 7391097002854563423,
+    "timestamp-ms" : 1770029920874,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "79",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2703",
+      "changed-partition-count" : "1",
+      "total-records" : "2672",
+      "total-files-size" : "312774",
+      "total-data-files" : "80",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5390225112907187532-1-0cb63c0e-cd48-4cb3-a5e5-24aef80b0adf.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 81,
+    "snapshot-id" : 5404926190855950707,
+    "parent-snapshot-id" : 5390225112907187532,
+    "timestamp-ms" : 1770029926032,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "80",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "2682",
+      "total-files-size" : "315486",
+      "total-data-files" : "81",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5404926190855950707-1-e18111a4-cbdc-4f16-9d9a-8d30ba07da87.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 82,
+    "snapshot-id" : 8777195633078026419,
+    "parent-snapshot-id" : 5404926190855950707,
+    "timestamp-ms" : 1770029930986,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "81",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2692",
+      "total-files-size" : "318199",
+      "total-data-files" : "82",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8777195633078026419-1-73b6c1fa-a579-451b-9c51-90691f3ab9ab.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 83,
+    "snapshot-id" : 7246521104750215196,
+    "parent-snapshot-id" : 8777195633078026419,
+    "timestamp-ms" : 1770029936073,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "82",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2707",
+      "changed-partition-count" : "1",
+      "total-records" : "2702",
+      "total-files-size" : "320906",
+      "total-data-files" : "83",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7246521104750215196-1-4597db4c-d2a3-459d-8249-3d857bdde675.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 84,
+    "snapshot-id" : 7296327199767404862,
+    "parent-snapshot-id" : 7246521104750215196,
+    "timestamp-ms" : 1770029940874,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "83",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2725",
+      "changed-partition-count" : "1",
+      "total-records" : "2712",
+      "total-files-size" : "323631",
+      "total-data-files" : "84",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7296327199767404862-1-33cfe10e-038f-47b6-bc3e-fee4e5bc9dd0.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 85,
+    "snapshot-id" : 3568955929271071526,
+    "parent-snapshot-id" : 7296327199767404862,
+    "timestamp-ms" : 1770029945930,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "84",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2722",
+      "total-files-size" : "326344",
+      "total-data-files" : "85",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3568955929271071526-1-6198c506-3303-47f1-a753-337b13812f6c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 86,
+    "snapshot-id" : 4994482794934607391,
+    "parent-snapshot-id" : 3568955929271071526,
+    "timestamp-ms" : 1770029950863,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "85",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "2732",
+      "total-files-size" : "329054",
+      "total-data-files" : "86",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4994482794934607391-1-9579aa65-e26e-4fda-83a6-bf21496666e2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 87,
+    "snapshot-id" : 8134044846324121071,
+    "parent-snapshot-id" : 4994482794934607391,
+    "timestamp-ms" : 1770029955827,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "86",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "2742",
+      "total-files-size" : "331766",
+      "total-data-files" : "87",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8134044846324121071-1-cb5f25b7-38dd-47c9-a074-faf63cde71df.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 88,
+    "snapshot-id" : 516150051178822663,
+    "parent-snapshot-id" : 8134044846324121071,
+    "timestamp-ms" : 1770029960844,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "87",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2719",
+      "changed-partition-count" : "1",
+      "total-records" : "2752",
+      "total-files-size" : "334485",
+      "total-data-files" : "88",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-516150051178822663-1-6a438383-6db6-4ba5-a7b5-9cb369090031.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 89,
+    "snapshot-id" : 1034428089895037578,
+    "parent-snapshot-id" : 516150051178822663,
+    "timestamp-ms" : 1770029965814,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "88",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2711",
+      "changed-partition-count" : "1",
+      "total-records" : "2762",
+      "total-files-size" : "337196",
+      "total-data-files" : "89",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1034428089895037578-1-b346d41e-e528-4467-ba54-c0a98a264c34.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 90,
+    "snapshot-id" : 1066625686583158285,
+    "parent-snapshot-id" : 1034428089895037578,
+    "timestamp-ms" : 1770029970843,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "89",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2721",
+      "changed-partition-count" : "1",
+      "total-records" : "2772",
+      "total-files-size" : "339917",
+      "total-data-files" : "90",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1066625686583158285-1-21885520-7cf0-4bee-9b7b-b665ee9d58c0.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 91,
+    "snapshot-id" : 2958491254572339774,
+    "parent-snapshot-id" : 1066625686583158285,
+    "timestamp-ms" : 1770029975843,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "90",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2714",
+      "changed-partition-count" : "1",
+      "total-records" : "2782",
+      "total-files-size" : "342631",
+      "total-data-files" : "91",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2958491254572339774-1-2785dd8e-221a-4d3d-8abc-5496bfe57ee7.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 92,
+    "snapshot-id" : 1524063346493621431,
+    "parent-snapshot-id" : 2958491254572339774,
+    "timestamp-ms" : 1770029980857,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "91",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "8",
+      "added-files-size" : "2598",
+      "changed-partition-count" : "1",
+      "total-records" : "2790",
+      "total-files-size" : "345229",
+      "total-data-files" : "92",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1524063346493621431-1-1ab393f6-9ea8-4196-8382-a79a5995080c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 93,
+    "snapshot-id" : 7998520213215468879,
+    "parent-snapshot-id" : 1524063346493621431,
+    "timestamp-ms" : 1770029985830,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "92",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2714",
+      "changed-partition-count" : "1",
+      "total-records" : "2800",
+      "total-files-size" : "347943",
+      "total-data-files" : "93",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7998520213215468879-1-af1010e2-07a0-4a7e-bda4-ff2671fae968.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 94,
+    "snapshot-id" : 3188523764293307370,
+    "parent-snapshot-id" : 7998520213215468879,
+    "timestamp-ms" : 1770029990868,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "93",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2701",
+      "changed-partition-count" : "1",
+      "total-records" : "2810",
+      "total-files-size" : "350644",
+      "total-data-files" : "94",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3188523764293307370-1-35ea90b7-f591-4a56-a475-710107b7e414.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 95,
+    "snapshot-id" : 3737030265162950704,
+    "parent-snapshot-id" : 3188523764293307370,
+    "timestamp-ms" : 1770029995887,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "94",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2820",
+      "total-files-size" : "353361",
+      "total-data-files" : "95",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3737030265162950704-1-113ea3ce-ca4b-4137-a020-b7b4ab6ed96b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 96,
+    "snapshot-id" : 7481008771249876904,
+    "parent-snapshot-id" : 3737030265162950704,
+    "timestamp-ms" : 1770030000887,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "95",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2707",
+      "changed-partition-count" : "1",
+      "total-records" : "2830",
+      "total-files-size" : "356068",
+      "total-data-files" : "96",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7481008771249876904-1-2e4cd10c-59c2-4f01-9d2b-e04f9e424cb5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 97,
+    "snapshot-id" : 1619166355442091910,
+    "parent-snapshot-id" : 7481008771249876904,
+    "timestamp-ms" : 1770030005867,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "96",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2716",
+      "changed-partition-count" : "1",
+      "total-records" : "2840",
+      "total-files-size" : "358784",
+      "total-data-files" : "97",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1619166355442091910-1-ac9fdb78-ace7-46d5-84e3-56d0b1df183e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 98,
+    "snapshot-id" : 2501784178972731137,
+    "parent-snapshot-id" : 1619166355442091910,
+    "timestamp-ms" : 1770030010901,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "97",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2850",
+      "total-files-size" : "361501",
+      "total-data-files" : "98",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2501784178972731137-1-4e824fb1-11d8-412c-ad86-ba632a34eec6.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 99,
+    "snapshot-id" : 8320446241580285956,
+    "parent-snapshot-id" : 2501784178972731137,
+    "timestamp-ms" : 1770030015315,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "98",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "2860",
+      "total-files-size" : "364211",
+      "total-data-files" : "99",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8320446241580285956-1-25efb9f4-6db4-4239-aa50-4f7dfb4f25e1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 100,
+    "snapshot-id" : 7371517401570110684,
+    "parent-snapshot-id" : 8320446241580285956,
+    "timestamp-ms" : 1770030020299,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "99",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2870",
+      "total-files-size" : "366928",
+      "total-data-files" : "100",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7371517401570110684-1-a93bdc88-e176-4368-9977-70695a2a06e5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 101,
+    "snapshot-id" : 4819633647948944676,
+    "parent-snapshot-id" : 7371517401570110684,
+    "timestamp-ms" : 1770030025375,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "100",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2718",
+      "changed-partition-count" : "1",
+      "total-records" : "2880",
+      "total-files-size" : "369646",
+      "total-data-files" : "101",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-4819633647948944676-1-faedf96f-5bc0-4106-9275-c08fceb8519e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 102,
+    "snapshot-id" : 5374567136057161911,
+    "parent-snapshot-id" : 4819633647948944676,
+    "timestamp-ms" : 1770030030375,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "101",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2717",
+      "changed-partition-count" : "1",
+      "total-records" : "2890",
+      "total-files-size" : "372363",
+      "total-data-files" : "102",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5374567136057161911-1-def892c4-dc12-4ba4-9285-c498c69e548a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 103,
+    "snapshot-id" : 6534836747554309994,
+    "parent-snapshot-id" : 5374567136057161911,
+    "timestamp-ms" : 1770030035392,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "102",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "2900",
+      "total-files-size" : "375075",
+      "total-data-files" : "103",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6534836747554309994-1-caad8225-b2a6-4d09-a275-c659c5984c46.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 104,
+    "snapshot-id" : 7241283668805228342,
+    "parent-snapshot-id" : 6534836747554309994,
+    "timestamp-ms" : 1770030040407,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "103",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2910",
+      "total-files-size" : "377788",
+      "total-data-files" : "104",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7241283668805228342-1-9de91b30-f907-4329-ac10-cac2e78b69d6.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 105,
+    "snapshot-id" : 2766911791109082269,
+    "parent-snapshot-id" : 7241283668805228342,
+    "timestamp-ms" : 1770030045515,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "104",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2715",
+      "changed-partition-count" : "1",
+      "total-records" : "2920",
+      "total-files-size" : "380503",
+      "total-data-files" : "105",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-2766911791109082269-1-8fc853f4-b2fd-4734-836f-f40e2ba987ea.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 106,
+    "snapshot-id" : 6971282718533180003,
+    "parent-snapshot-id" : 2766911791109082269,
+    "timestamp-ms" : 1770030050480,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "105",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2709",
+      "changed-partition-count" : "1",
+      "total-records" : "2930",
+      "total-files-size" : "383212",
+      "total-data-files" : "106",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6971282718533180003-1-314ab1fe-af51-44eb-9030-fd27a60e2173.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 107,
+    "snapshot-id" : 3538168526044480933,
+    "parent-snapshot-id" : 6971282718533180003,
+    "timestamp-ms" : 1770030055510,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "106",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2711",
+      "changed-partition-count" : "1",
+      "total-records" : "2940",
+      "total-files-size" : "385923",
+      "total-data-files" : "107",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3538168526044480933-1-448ae7d2-f725-401b-afb3-f4f5124d297b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 108,
+    "snapshot-id" : 8396859283983917108,
+    "parent-snapshot-id" : 3538168526044480933,
+    "timestamp-ms" : 1770030060597,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "107",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2713",
+      "changed-partition-count" : "1",
+      "total-records" : "2950",
+      "total-files-size" : "388636",
+      "total-data-files" : "108",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8396859283983917108-1-e80e6a3e-9fd5-415e-a617-bee7c2672779.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 109,
+    "snapshot-id" : 3045691975526289285,
+    "parent-snapshot-id" : 8396859283983917108,
+    "timestamp-ms" : 1770030065564,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "108",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2715",
+      "changed-partition-count" : "1",
+      "total-records" : "2960",
+      "total-files-size" : "391351",
+      "total-data-files" : "109",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-3045691975526289285-1-735f20ae-5d8c-413c-ab8a-b2019e539660.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 110,
+    "snapshot-id" : 5800655723121702240,
+    "parent-snapshot-id" : 3045691975526289285,
+    "timestamp-ms" : 1770030070576,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "109",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2721",
+      "changed-partition-count" : "1",
+      "total-records" : "2970",
+      "total-files-size" : "394072",
+      "total-data-files" : "110",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5800655723121702240-1-40e0f52e-88a7-43ef-aeac-2a3a9f62c0b0.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 111,
+    "snapshot-id" : 5711570350137502628,
+    "parent-snapshot-id" : 5800655723121702240,
+    "timestamp-ms" : 1770030075615,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "110",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2723",
+      "changed-partition-count" : "1",
+      "total-records" : "2980",
+      "total-files-size" : "396795",
+      "total-data-files" : "111",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5711570350137502628-1-da79011c-e04b-468f-a701-6f0f142a6178.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 112,
+    "snapshot-id" : 6697852845153858546,
+    "parent-snapshot-id" : 5711570350137502628,
+    "timestamp-ms" : 1770030080731,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "111",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2712",
+      "changed-partition-count" : "1",
+      "total-records" : "2990",
+      "total-files-size" : "399507",
+      "total-data-files" : "112",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6697852845153858546-1-30e043e4-ffa5-4d10-8f98-b5d9a88c0d2e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 113,
+    "snapshot-id" : 7534359363919953662,
+    "parent-snapshot-id" : 6697852845153858546,
+    "timestamp-ms" : 1770030085671,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "112",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2708",
+      "changed-partition-count" : "1",
+      "total-records" : "3000",
+      "total-files-size" : "402215",
+      "total-data-files" : "113",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7534359363919953662-1-d94e99c7-3e04-45d4-bb91-abde27032703.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 114,
+    "snapshot-id" : 1476242439255025581,
+    "parent-snapshot-id" : 7534359363919953662,
+    "timestamp-ms" : 1770030090696,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "113",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2709",
+      "changed-partition-count" : "1",
+      "total-records" : "3010",
+      "total-files-size" : "404924",
+      "total-data-files" : "114",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1476242439255025581-1-194a39bc-c610-47aa-9ebc-b350b12802d4.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 115,
+    "snapshot-id" : 8979737344365924525,
+    "parent-snapshot-id" : 1476242439255025581,
+    "timestamp-ms" : 1770030095787,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "114",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2716",
+      "changed-partition-count" : "1",
+      "total-records" : "3020",
+      "total-files-size" : "407640",
+      "total-data-files" : "115",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-8979737344365924525-1-6a563f2c-c6c7-4931-8549-932fb3e581bd.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 116,
+    "snapshot-id" : 881955086460393642,
+    "parent-snapshot-id" : 8979737344365924525,
+    "timestamp-ms" : 1770030100803,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "115",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "3030",
+      "total-files-size" : "410350",
+      "total-data-files" : "116",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-881955086460393642-1-8c9a0228-499b-4d70-a46f-cd4b1a425777.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 117,
+    "snapshot-id" : 5132578766207005746,
+    "parent-snapshot-id" : 881955086460393642,
+    "timestamp-ms" : 1770030105774,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "116",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2718",
+      "changed-partition-count" : "1",
+      "total-records" : "3040",
+      "total-files-size" : "413068",
+      "total-data-files" : "117",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-5132578766207005746-1-0a47fd4a-84b2-45e2-a527-6457fb1ba7fe.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 118,
+    "snapshot-id" : 7586694740520181937,
+    "parent-snapshot-id" : 5132578766207005746,
+    "timestamp-ms" : 1770030110803,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "117",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2710",
+      "changed-partition-count" : "1",
+      "total-records" : "3050",
+      "total-files-size" : "415778",
+      "total-data-files" : "118",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-7586694740520181937-1-7f4cbb0d-46c4-45ef-afea-724c6073c494.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 119,
+    "snapshot-id" : 1331228140490014945,
+    "parent-snapshot-id" : 7586694740520181937,
+    "timestamp-ms" : 1770030115768,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "118",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2718",
+      "changed-partition-count" : "1",
+      "total-records" : "3060",
+      "total-files-size" : "418496",
+      "total-data-files" : "119",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-1331228140490014945-1-96eb1d5d-16d6-4cb1-b2f3-a9d8c8869c14.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 120,
+    "snapshot-id" : 6759893995228354000,
+    "parent-snapshot-id" : 1331228140490014945,
+    "timestamp-ms" : 1770030120851,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1770029514814",
+      "spark.sql.streaming.epochId" : "119",
+      "spark.sql.streaming.queryId" : "d523337a-5418-4a06-b24d-30b17f19902c",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2711",
+      "changed-partition-count" : "1",
+      "total-records" : "3070",
+      "total-files-size" : "421207",
+      "total-data-files" : "120",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/snap-6759893995228354000-1-54ba5fa4-2068-46ba-a88b-840229debea3.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1770029532749,
+    "snapshot-id" : 1066501111643941444
+  }, {
+    "timestamp-ms" : 1770029534909,
+    "snapshot-id" : 4433274433841543261
+  }, {
+    "timestamp-ms" : 1770029536214,
+    "snapshot-id" : 2954599012390699088
+  }, {
+    "timestamp-ms" : 1770029541230,
+    "snapshot-id" : 5859216669589571597
+  }, {
+    "timestamp-ms" : 1770029546163,
+    "snapshot-id" : 8048923130470806276
+  }, {
+    "timestamp-ms" : 1770029551114,
+    "snapshot-id" : 4480618385027906664
+  }, {
+    "timestamp-ms" : 1770029556118,
+    "snapshot-id" : 786430340235921023
+  }, {
+    "timestamp-ms" : 1770029561163,
+    "snapshot-id" : 2650805938513895343
+  }, {
+    "timestamp-ms" : 1770029566152,
+    "snapshot-id" : 2128715170533179424
+  }, {
+    "timestamp-ms" : 1770029571132,
+    "snapshot-id" : 4960065625936016190
+  }, {
+    "timestamp-ms" : 1770029576149,
+    "snapshot-id" : 3744832089703232743
+  }, {
+    "timestamp-ms" : 1770029581084,
+    "snapshot-id" : 9053251877081099785
+  }, {
+    "timestamp-ms" : 1770029585982,
+    "snapshot-id" : 2941555470234064885
+  }, {
+    "timestamp-ms" : 1770029591120,
+    "snapshot-id" : 6359021715772090765
+  }, {
+    "timestamp-ms" : 1770029596086,
+    "snapshot-id" : 3737232124686270142
+  }, {
+    "timestamp-ms" : 1770029601007,
+    "snapshot-id" : 719069379371621993
+  }, {
+    "timestamp-ms" : 1770029606135,
+    "snapshot-id" : 5400090682519983980
+  }, {
+    "timestamp-ms" : 1770029611035,
+    "snapshot-id" : 5811876878324594624
+  }, {
+    "timestamp-ms" : 1770029615525,
+    "snapshot-id" : 4155545498999826876
+  }, {
+    "timestamp-ms" : 1770029621104,
+    "snapshot-id" : 1693520380345594554
+  }, {
+    "timestamp-ms" : 1770029625536,
+    "snapshot-id" : 5220092480378982761
+  }, {
+    "timestamp-ms" : 1770029630538,
+    "snapshot-id" : 8965804545960591202
+  }, {
+    "timestamp-ms" : 1770029635669,
+    "snapshot-id" : 7035423479249074077
+  }, {
+    "timestamp-ms" : 1770029640625,
+    "snapshot-id" : 1254520747719292254
+  }, {
+    "timestamp-ms" : 1770029645602,
+    "snapshot-id" : 2175587505709765125
+  }, {
+    "timestamp-ms" : 1770029650720,
+    "snapshot-id" : 8149156306642393412
+  }, {
+    "timestamp-ms" : 1770029655653,
+    "snapshot-id" : 145736026979077629
+  }, {
+    "timestamp-ms" : 1770029660653,
+    "snapshot-id" : 756872894576375553
+  }, {
+    "timestamp-ms" : 1770029665697,
+    "snapshot-id" : 2424755938347820841
+  }, {
+    "timestamp-ms" : 1770029670825,
+    "snapshot-id" : 6846291009221090220
+  }, {
+    "timestamp-ms" : 1770029675864,
+    "snapshot-id" : 5872340616122880346
+  }, {
+    "timestamp-ms" : 1770029680885,
+    "snapshot-id" : 152045608576422438
+  }, {
+    "timestamp-ms" : 1770029685805,
+    "snapshot-id" : 2698453672045164472
+  }, {
+    "timestamp-ms" : 1770029690848,
+    "snapshot-id" : 808470621713480548
+  }, {
+    "timestamp-ms" : 1770029695862,
+    "snapshot-id" : 5692268770036429254
+  }, {
+    "timestamp-ms" : 1770029700882,
+    "snapshot-id" : 4038868888720600449
+  }, {
+    "timestamp-ms" : 1770029705915,
+    "snapshot-id" : 7366416894448308184
+  }, {
+    "timestamp-ms" : 1770029710994,
+    "snapshot-id" : 8331751299412290811
+  }, {
+    "timestamp-ms" : 1770029715987,
+    "snapshot-id" : 7859648518076985559
+  }, {
+    "timestamp-ms" : 1770029721079,
+    "snapshot-id" : 1947193864219291083
+  }, {
+    "timestamp-ms" : 1770029725994,
+    "snapshot-id" : 3046068784951569886
+  }, {
+    "timestamp-ms" : 1770029730961,
+    "snapshot-id" : 7658370817158028588
+  }, {
+    "timestamp-ms" : 1770029736032,
+    "snapshot-id" : 7283123889521756217
+  }, {
+    "timestamp-ms" : 1770029740882,
+    "snapshot-id" : 358894745641852867
+  }, {
+    "timestamp-ms" : 1770029745897,
+    "snapshot-id" : 4975333891790658444
+  }, {
+    "timestamp-ms" : 1770029750922,
+    "snapshot-id" : 1095505235561858198
+  }, {
+    "timestamp-ms" : 1770029755945,
+    "snapshot-id" : 8201700769087720470
+  }, {
+    "timestamp-ms" : 1770029761036,
+    "snapshot-id" : 4536109690326774361
+  }, {
+    "timestamp-ms" : 1770029765876,
+    "snapshot-id" : 2171842264308689024
+  }, {
+    "timestamp-ms" : 1770029770877,
+    "snapshot-id" : 1053976277135906567
+  }, {
+    "timestamp-ms" : 1770029775892,
+    "snapshot-id" : 6964181081057050324
+  }, {
+    "timestamp-ms" : 1770029781166,
+    "snapshot-id" : 5660035728158334228
+  }, {
+    "timestamp-ms" : 1770029785926,
+    "snapshot-id" : 8269964009495305128
+  }, {
+    "timestamp-ms" : 1770029790930,
+    "snapshot-id" : 7711885672918992066
+  }, {
+    "timestamp-ms" : 1770029795892,
+    "snapshot-id" : 2666608301375097087
+  }, {
+    "timestamp-ms" : 1770029800387,
+    "snapshot-id" : 7720925409631862793
+  }, {
+    "timestamp-ms" : 1770029805466,
+    "snapshot-id" : 5750141586359940251
+  }, {
+    "timestamp-ms" : 1770029810493,
+    "snapshot-id" : 1568685635276804951
+  }, {
+    "timestamp-ms" : 1770029815348,
+    "snapshot-id" : 6939435535682279491
+  }, {
+    "timestamp-ms" : 1770029821033,
+    "snapshot-id" : 8581281731109782468
+  }, {
+    "timestamp-ms" : 1770029825436,
+    "snapshot-id" : 4721799067281747074
+  }, {
+    "timestamp-ms" : 1770029830600,
+    "snapshot-id" : 7781731106664700140
+  }, {
+    "timestamp-ms" : 1770029835456,
+    "snapshot-id" : 6995296402791688361
+  }, {
+    "timestamp-ms" : 1770029840515,
+    "snapshot-id" : 7578921044888418750
+  }, {
+    "timestamp-ms" : 1770029845558,
+    "snapshot-id" : 2744968199659543489
+  }, {
+    "timestamp-ms" : 1770029850553,
+    "snapshot-id" : 3942024132670022402
+  }, {
+    "timestamp-ms" : 1770029855532,
+    "snapshot-id" : 7652222314890177796
+  }, {
+    "timestamp-ms" : 1770029860558,
+    "snapshot-id" : 834560371797283228
+  }, {
+    "timestamp-ms" : 1770029865850,
+    "snapshot-id" : 8885664542866114650
+  }, {
+    "timestamp-ms" : 1770029870600,
+    "snapshot-id" : 7031496077691300051
+  }, {
+    "timestamp-ms" : 1770029875647,
+    "snapshot-id" : 9011456032344848592
+  }, {
+    "timestamp-ms" : 1770029880663,
+    "snapshot-id" : 2803012640081589611
+  }, {
+    "timestamp-ms" : 1770029885744,
+    "snapshot-id" : 3865095355506449748
+  }, {
+    "timestamp-ms" : 1770029890863,
+    "snapshot-id" : 7718333437194846969
+  }, {
+    "timestamp-ms" : 1770029895840,
+    "snapshot-id" : 1165064642726377882
+  }, {
+    "timestamp-ms" : 1770029900846,
+    "snapshot-id" : 6387165924374220348
+  }, {
+    "timestamp-ms" : 1770029905856,
+    "snapshot-id" : 4952287386123987694
+  }, {
+    "timestamp-ms" : 1770029910846,
+    "snapshot-id" : 1000861234306272343
+  }, {
+    "timestamp-ms" : 1770029915823,
+    "snapshot-id" : 7391097002854563423
+  }, {
+    "timestamp-ms" : 1770029920874,
+    "snapshot-id" : 5390225112907187532
+  }, {
+    "timestamp-ms" : 1770029926032,
+    "snapshot-id" : 5404926190855950707
+  }, {
+    "timestamp-ms" : 1770029930986,
+    "snapshot-id" : 8777195633078026419
+  }, {
+    "timestamp-ms" : 1770029936073,
+    "snapshot-id" : 7246521104750215196
+  }, {
+    "timestamp-ms" : 1770029940874,
+    "snapshot-id" : 7296327199767404862
+  }, {
+    "timestamp-ms" : 1770029945930,
+    "snapshot-id" : 3568955929271071526
+  }, {
+    "timestamp-ms" : 1770029950863,
+    "snapshot-id" : 4994482794934607391
+  }, {
+    "timestamp-ms" : 1770029955827,
+    "snapshot-id" : 8134044846324121071
+  }, {
+    "timestamp-ms" : 1770029960844,
+    "snapshot-id" : 516150051178822663
+  }, {
+    "timestamp-ms" : 1770029965814,
+    "snapshot-id" : 1034428089895037578
+  }, {
+    "timestamp-ms" : 1770029970843,
+    "snapshot-id" : 1066625686583158285
+  }, {
+    "timestamp-ms" : 1770029975843,
+    "snapshot-id" : 2958491254572339774
+  }, {
+    "timestamp-ms" : 1770029980857,
+    "snapshot-id" : 1524063346493621431
+  }, {
+    "timestamp-ms" : 1770029985830,
+    "snapshot-id" : 7998520213215468879
+  }, {
+    "timestamp-ms" : 1770029990868,
+    "snapshot-id" : 3188523764293307370
+  }, {
+    "timestamp-ms" : 1770029995887,
+    "snapshot-id" : 3737030265162950704
+  }, {
+    "timestamp-ms" : 1770030000887,
+    "snapshot-id" : 7481008771249876904
+  }, {
+    "timestamp-ms" : 1770030005867,
+    "snapshot-id" : 1619166355442091910
+  }, {
+    "timestamp-ms" : 1770030010901,
+    "snapshot-id" : 2501784178972731137
+  }, {
+    "timestamp-ms" : 1770030015315,
+    "snapshot-id" : 8320446241580285956
+  }, {
+    "timestamp-ms" : 1770030020299,
+    "snapshot-id" : 7371517401570110684
+  }, {
+    "timestamp-ms" : 1770030025375,
+    "snapshot-id" : 4819633647948944676
+  }, {
+    "timestamp-ms" : 1770030030375,
+    "snapshot-id" : 5374567136057161911
+  }, {
+    "timestamp-ms" : 1770030035392,
+    "snapshot-id" : 6534836747554309994
+  }, {
+    "timestamp-ms" : 1770030040407,
+    "snapshot-id" : 7241283668805228342
+  }, {
+    "timestamp-ms" : 1770030045515,
+    "snapshot-id" : 2766911791109082269
+  }, {
+    "timestamp-ms" : 1770030050480,
+    "snapshot-id" : 6971282718533180003
+  }, {
+    "timestamp-ms" : 1770030055510,
+    "snapshot-id" : 3538168526044480933
+  }, {
+    "timestamp-ms" : 1770030060597,
+    "snapshot-id" : 8396859283983917108
+  }, {
+    "timestamp-ms" : 1770030065564,
+    "snapshot-id" : 3045691975526289285
+  }, {
+    "timestamp-ms" : 1770030070576,
+    "snapshot-id" : 5800655723121702240
+  }, {
+    "timestamp-ms" : 1770030075615,
+    "snapshot-id" : 5711570350137502628
+  }, {
+    "timestamp-ms" : 1770030080731,
+    "snapshot-id" : 6697852845153858546
+  }, {
+    "timestamp-ms" : 1770030085671,
+    "snapshot-id" : 7534359363919953662
+  }, {
+    "timestamp-ms" : 1770030090696,
+    "snapshot-id" : 1476242439255025581
+  }, {
+    "timestamp-ms" : 1770030095787,
+    "snapshot-id" : 8979737344365924525
+  }, {
+    "timestamp-ms" : 1770030100803,
+    "snapshot-id" : 881955086460393642
+  }, {
+    "timestamp-ms" : 1770030105774,
+    "snapshot-id" : 5132578766207005746
+  }, {
+    "timestamp-ms" : 1770030110803,
+    "snapshot-id" : 7586694740520181937
+  }, {
+    "timestamp-ms" : 1770030115768,
+    "snapshot-id" : 1331228140490014945
+  }, {
+    "timestamp-ms" : 1770030120851,
+    "snapshot-id" : 6759893995228354000
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1770029621104,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v21.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029625536,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v22.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029630538,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v23.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029635669,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v24.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029640625,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v25.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029645602,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v26.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029650720,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v27.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029655653,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v28.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029660653,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v29.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029665697,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v30.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029670825,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v31.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029675864,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v32.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029680885,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v33.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029685805,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v34.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029690848,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v35.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029695862,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v36.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029700882,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v37.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029705915,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v38.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029710994,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v39.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029715987,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v40.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029721079,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v41.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029725994,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v42.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029730961,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v43.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029736032,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v44.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029740882,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v45.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029745897,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v46.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029750922,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v47.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029755945,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v48.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029761036,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v49.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029765876,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v50.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029770877,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v51.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029775892,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v52.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029781166,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v53.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029785926,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v54.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029790930,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v55.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029795892,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v56.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029800387,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v57.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029805466,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v58.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029810493,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v59.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029815348,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v60.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029821033,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v61.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029825436,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v62.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029830600,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v63.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029835456,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v64.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029840515,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v65.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029845558,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v66.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029850553,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v67.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029855532,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v68.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029860558,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v69.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029865850,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v70.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029870600,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v71.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029875647,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v72.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029880663,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v73.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029885744,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v74.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029890863,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v75.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029895840,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v76.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029900846,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v77.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029905856,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v78.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029910846,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v79.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029915823,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v80.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029920874,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v81.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029926032,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v82.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029930986,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v83.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029936073,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v84.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029940874,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v85.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029945930,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v86.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029950863,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v87.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029955827,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v88.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029960844,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v89.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029965814,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v90.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029970843,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v91.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029975843,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v92.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029980857,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v93.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029985830,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v94.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029990868,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v95.metadata.json"
+  }, {
+    "timestamp-ms" : 1770029995887,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v96.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030000887,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v97.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030005867,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v98.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030010901,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v99.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030015315,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v100.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030020299,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v101.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030025375,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v102.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030030375,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v103.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030035392,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v104.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030040407,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v105.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030045515,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v106.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030050480,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v107.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030055510,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v108.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030060597,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v109.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030065564,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v110.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030070576,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v111.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030075615,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v112.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030080731,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v113.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030085671,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v114.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030090696,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v115.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030095787,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v116.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030100803,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v117.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030105774,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v118.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030110803,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v119.metadata.json"
+  }, {
+    "timestamp-ms" : 1770030115768,
+    "metadata-file" : "s3a://retail-lake/iceberg_warehouse/retail/orders/metadata/v120.metadata.json"
+  } ]
+}

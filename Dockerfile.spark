@@ -1,0 +1,13 @@
+# Switch to the Official Apache Spark image
+FROM apache/spark:3.5.0
+
+# Switch to root to install python libraries
+USER root
+
+# Install Kafka Python
+RUN pip install kafka-python
+
+# DONE. (Do not switch back to 'spark' user)
+
+# Switch back to the default user (the official image uses 'spark', not '1001')
+# USER spark

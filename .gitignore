@@ -1,0 +1,24 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Mac OS
+.DS_Store
+
+# dbt & DuckDB
+dbt_packages/
+target/
+logs/
+*.db
+*.db.wal
+
+# Dagster
+.tmp_dagster_home*
+dagster_home/
+
+# Spark
+checkpoints/
+spark-warehouse/
+metastore_db/
+derby.log

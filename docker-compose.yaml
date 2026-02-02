@@ -1,0 +1,72 @@
+version: '3'
+
+services:
+  # -----------------------------
+  # STORAGE LAYER (MinIO = S3)
+  # -----------------------------
+  minio:
+    image: minio/minio
+    container_name: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minio_admin
+      MINIO_ROOT_PASSWORD: minio_password
+    command: server /data --console-address ":9001"
+    volumes:
+      - ./minio_data:/data
+
+  # -----------------------------
+  # STREAMING LAYER (Redpanda = Kafka)
+  # -----------------------------
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:latest
+    container_name: redpanda
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    command:
+      - redpanda start
+      - --smp 1  # Limit to 1 CPU core
+      - --memory 1G  # Limit memory usage
+      - --reserve-memory 0M
+      - --overprovisioned
+      - --kafka-addr internal://0.0.0.0:29092,external://0.0.0.0:9092
+      - --advertise-kafka-addr internal://redpanda:29092,external://localhost:9092
+
+  # -----------------------------
+  # PROCESSING LAYER (Spark)
+  # -----------------------------
+  spark-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile.spark
+    container_name: spark-processor
+    depends_on:
+      - redpanda
+      - minio
+    environment:
+      - MINIO_ACCESS_KEY=minio_admin
+      - MINIO_SECRET_KEY=minio_password
+    volumes:
+      # UPDATE: Path changed from /opt/bitnami/spark to /opt/spark
+      - ./processor.py:/opt/spark/work-dir/processor.py
+    command: >
+      /opt/spark/bin/spark-submit 
+      --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,org.apache.iceberg:iceberg-spark-runtime-3.5_2.12:1.4.3,org.apache.hadoop:hadoop-aws:3.3.4
+      /opt/spark/work-dir/processor.py
+
+  # -----------------------------
+  # SERVING LAYER (DuckDB)
+  # -----------------------------
+  duckdb:
+    build:
+      context: .
+      dockerfile: Dockerfile.duckdb
+    container_name: duckdb
+    depends_on:
+      - minio
+    environment:
+      - MINIO_ACCESS_KEY=minio_admin
+      - MINIO_SECRET_KEY=minio_password
